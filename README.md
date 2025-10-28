@@ -146,36 +146,51 @@ CareCrew uses multiple specialized agents — like a team of doctors working tog
 CareCrew combines **FastAPI microservices**, **hybrid AI orchestration**, and **multi-agent collaboration** into a powerful, explainable, and future-proof medical assistant framework — built for real healthcare applications, not demos.
  
 
----
+--
 
-### 📊 Data Flow (Diagram)
+
+### 📊 Data Flow (Diagram)  
 
 ```mermaid
 flowchart TD
     subgraph User["User"]
-        A[Uploads PDF, X-Ray, etc]
-        B[Streamlit App]
+        A[Lab Report PDF]
+        B[X-Ray Image]
+        C[Health Vitals Data]
+        D[Text Query]
     end
 
-    subgraph Orchestrator["App Logic (Crew Orchestrator)"]
-        B --> C{Main Orchestrator}
-        C --> D[1. doc_analyzer_logic]
-        D --> E[2. icd_logic]
-        E --> F[3. reasoning_logic]
-        F --> G[4. kb_logic]
-        G --> H[5. planner_logic]
-        H --> I[6. advisory_logic]
-        I --> B
+    subgraph Orchestrator["Crew Orchestrator"]
+        E1[Document Analyzer]
+        E2[Medical Context Agent]
+        E3[Knowledge Base Agent]
+        E4[Reasoning Agent]
+        E5[Treatment Planner Agent]
+        E6[Advisory Agent]
     end
 
-    subgraph MCP["FastAPI Servers (Microservices)"]
-        M1[(FDA Server :8001)]
-        M2[(KB Server :8002)]
+    subgraph MCP["MCP Servers"]
+        M1[(FDA Server)]
+        M2[(Knowledge Base Server)]
     end
 
-    G --> M2
-    H --> M1
+    A --> E1
+    B --> E1
+    C --> E2
+    D --> E2
+    E1 --> E2
+    E2 --> E3
+    E3 --> M2
+    E2 --> M1
+    E3 --> E4
+    E2 --> E4
+    E4 --> E5
+    E5 --> E6
+    E6 --> User
 
+```
+
+---
 
 
 ## 🧭 Ethics & Safety Considerations  
