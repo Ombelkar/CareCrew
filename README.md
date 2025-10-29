@@ -204,6 +204,25 @@ CareCrew follows strong ethical and safety practices in line with medical AI gui
 
 ---
 
+## 🌐 Multilingual Support  
+
+CareCrew is designed for inclusivity and accessibility across India.  
+It supports generating clinical summaries, reports, and recommendations in multiple languages — ensuring that both healthcare professionals and patients can understand results clearly.  
+
+**Supported Languages:**  
+- 🇬🇧 **English**  
+- 🇮🇳 **Hindi (हिन्दी)**  
+- 🇮🇳 **Marathi (मराठी)**  
+- 🇮🇳 **Telugu (తెలుగు)**  
+- 🇮🇳 **Tamil (தமிழ்)**  
+- 🇮🇳 **Kannada (ಕನ್ನಡ)**  
+
+Each report can be automatically translated and localized, making CareCrew useful across diverse linguistic regions.
+
+---
+
+---
+
 ##  📂 File Structure    
 
 ```
