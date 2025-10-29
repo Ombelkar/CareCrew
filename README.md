@@ -221,7 +221,6 @@ Each report can be automatically translated and localized, making CareCrew usefu
 
 ---
 
----
 
 ##  📂 File Structure    
 
