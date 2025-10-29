@@ -146,7 +146,6 @@ CareCrew uses multiple specialized agents — like a team of doctors working tog
 CareCrew combines **FastAPI microservices**, **hybrid AI orchestration**, and **multi-agent collaboration** into a powerful, explainable, and future-proof medical assistant framework — built for real healthcare applications, not demos.
  
 
---
 
 
 ### 📊 Data Flow (Diagram)  
@@ -205,9 +204,7 @@ CareCrew follows strong ethical and safety practices in line with medical AI gui
 
 ---
 
-## 🖥️ How to Run Locally  
-
-### 📂 File Structure  
+##  📂 File Structure    
 
 ```
 .
